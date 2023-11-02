@@ -1,0 +1,106 @@
+time {
+    display: block;
+}
+
+.container-tablet {
+    display: none;
+}
+
+.container-notablet {
+    width: 90%;
+    padding-left: 48px;
+    margin-bottom: 32px;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(124, 127, 126);
+    border-bottom: 2px solid black;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+#carousel-exemplo, p {
+    margin-top: 48px;     
+}
+
+p, h2 {
+    padding: 0 48px;
+}
+
+h2, .container {
+    margin-bottom: 48px;
+}
+
+#carousel-exemplo {
+    border: 2px solid black;
+    width: 50%;
+    margin-bottom: 48px; 
+}
+
+img {
+    max-height: 450px;
+}
+
+.img_card {
+    height: 250px;
+}
+
+footer {
+    padding: 16px 0;
+    background-color: rgb(124, 127, 126);
+    color: whitesmoke;
+    border-top: 2px solid black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px){
+    
+    .row {
+        display: block;
+    }
+
+    .img_card {
+        width: 95%;
+    }
+
+    h2 {
+        padding-left: 16px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        width: 90%;
+        align-items: center;
+        margin-left: 16px;
+    }
+
+    .container-tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .card {
+        grid-template-columns: repeat(2,49%);
+    }
+
+    .container-notablet {
+        display: none;
+    }
+
+    .container-tablet {
+        display: flex;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        
+    }
+    
+}
